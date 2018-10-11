@@ -22,20 +22,20 @@
             <a>Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="index.html">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </div>
     </nav>
-    <a class="page-header__logo">
+    <a href="index.html" class="page-header__logo">
       <img class="page-header__logo-image" src="#" width="100" height="100" alt="HTML Academy: Седона">
     </a>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">Оставьте свой отзыв</h1>
-    <p class="comment-form__info">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-    <form method="post" action="https://echo.htmlacademy.ru" class="popup-form">
-      <fieldset class="comment-form">
+    <h1 class="page-main__main-title">Оставьте свой отзыв</h1>
+    <p class="page-main__info">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <form method="post" action="https://echo.htmlacademy.ru" class="comment-form">
+      <fieldset class="comment-form__field-set">
         <legend class="visually-hidden">
           Форма обратной связи
         </legend>
@@ -68,7 +68,7 @@
             </label>
             <input type="text" class="comment-form__custom-input" name="usertell" id="usertell" placeholder="Введите телефон:">
           </div>
-          <div class="popup-form__input-container">
+          <div class="comment-form__input-container">
             <label for="usersurname">
               Электронная почта:
             </label>
@@ -77,44 +77,44 @@
         </div>
         <div class="comment-form__impression">
           <h2 class="visually-hidden">Ваше общее впечатление:</h2>
-          <fieldset class="filter__field filter__field--bottom">
+          <fieldset class="comment-form__field comment-form__field--bottom">
             <legend class="comment-form__title">
               Ваше общее впечатление:
             </legend>
-            <input type="radio" name="morepositive" value="2" id="morepositive" class="filter__input visually-hidden" checked>
-            <label for="morepositive" class="filter__label filter__label--radio">
+            <input type="radio" name="morepositive" value="2" id="morepositive" class="comment-form__input visually-hidden" checked>
+            <label for="morepositive" class="comment-form__label comment-form__label--radio">
               Скорее положительное
             </label>
-            <input type="radio" name="morenegative" value="1" id="morenegative" class="filter__input visually-hidden">
-            <label for="morepositive" class="filter__label filter__label--radio">
+            <input type="radio" name="morenegative" value="1" id="morenegative" class="comment-form__input visually-hidden">
+            <label for="morepositive" class="comment-form__label comment-form__label--radio">
               Скорее отрицательное
             </label>
-            <input type="radio" name="difficultreply" value="0" id="difficultreply" class="filter__input visually-hidden">
-            <label for="difficultreply" class="filter__label filter__label--radio">
+            <input type="radio" name="difficultreply" value="0" id="difficultreply" class="comment-form__input visually-hidden">
+            <label for="difficultreply" class="comment-form__label comment-form__label--radio">
               Затрудняюсь ответить
             </label>
           </fieldset>
         </div>
         <div class="comment-form__sights">
           <h2 class="visually-hidden">Посещенные достопримечательности:</h2>
-          <fieldset class="filter__field filter__field--middle">
-            <legend class="filter__legend">
+          <fieldset class="comment-form__field comment-form__field--middle">
+            <legend class="comment-form__legend">
               Посещенные достопримечательности:
             </legend>
-            <input type="checkbox" name="sight" value="bridge" id="cb-bridge" class="filter__input visually-hidden" checked>
-            <label for="cb-bridge" class="filter__label filter__label--checkbox">
+            <input type="checkbox" name="sight" value="bridge" id="cb-bridge" class="comment-form__input visually-hidden" checked>
+            <label for="cb-bridge" class="comment-form__label comment-form__label--checkbox">
               Мост Дьявола
             </label>
-            <input type="checkbox" name="sight" value="white" id="cb-mount" class="filter__input visually-hidden">
-            <label for="cb-mount" class="filter__label filter__label--checkbox">
+            <input type="checkbox" name="sight" value="white" id="cb-mount" class="comment-form__input visually-hidden">
+            <label for="cb-mount" class="comment-form__label comment-form__label--checkbox">
               Гора-Колокол
             </label>
-            <input type="checkbox" name="sight" value="park" id="cb-park" class="filter__input visually-hidden">
-            <label for="cb-park" class="filter__label filter__label--checkbox">
+            <input type="checkbox" name="sight" value="park" id="cb-park" class="comment-form__input visually-hidden">
+            <label for="cb-park" class="comment-form__label comment-form__label--checkbox">
               Слайд-парк
             </label>
-            <input type="checkbox" name="sight" value="red" id="cb-rocks" class="filter__input visually-hidden">
-            <label for="cb-rocks" class="filter__label filter__label--checkbox">
+            <input type="checkbox" name="sight" value="red" id="cb-rocks" class="comment-form__input visually-hidden">
+            <label for="cb-rocks" class="comment-form__label comment-form__label--checkbox">
               Красные скалы
             </label>
           </fieldset>
@@ -139,7 +139,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <section class="social">
-        <h2 class="social__title--hidden">Мы в соцсетях</h2>
+        <h2 class="social__title visually-hidden">Мы в соцсетях</h2>
         <div class="page-footer__social social">
           <b class="social__title">#visitsedona</b>
           <ul class="social__list">
