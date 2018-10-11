@@ -11,7 +11,11 @@
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "@htmlacademy/editorconfig-cli": "1.x",
+<<<<<<< HEAD
     "stylelint": "9.6.x",
+=======
+    "stylelint": "^9.5.0",
+>>>>>>> 10f8fcdd309c0c966ee7fe3eb77ef4164886af59
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
@@ -36,5 +40,12 @@
   ],
   "engines": {
     "node": "8.12"
+<<<<<<< HEAD
+=======
+  },
+  "dependencies": {
+    "grunt-cli": "^1.3.1",
+    "postcss": "^7.0.5"
+>>>>>>> 10f8fcdd309c0c966ee7fe3eb77ef4164886af59
   }
 }
