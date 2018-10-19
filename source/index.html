@@ -3,17 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Седона</title>
-	<link href="css/normalize-mini.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
+            <button class="main-menu main-nav__toggle font-none" type="button">Закрыть меню
+              <img class="page-header__cross-image" src="img/icon-cross.svg" width="22" height="22" alt="Menu: icon">
+            </button>
           </li>
           <li class="site-list__item">
             <a href="photo.html">Фото и видео</a>
@@ -27,16 +28,26 @@
         </ul>
       </div>
     </nav>
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="#" width="100" height="100" alt="HTML Academy: Седона">
-    </a>
+    <div class="page-header__logo">
+      <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="HTML Academy: Седона">
+      <button class="main-menu main-nav__toggle font-none" type="button">Открыть меню
+        <img class="page-header__logo-image" src="img/icon-menu.svg" width="23" height="22" alt="Menu: icon">
+      </button>
+    </div>
+    <div class="header-picture">
+      <img class="page-header__sedona-picture" src="img/text-sedona-index.svg" width="280" alt="Sedona picture">
+    </div>
+
+    <div class="header-triangles">
+      <img class="page-header__sedona-picture" src="img/bg-intro-triangle-mobile.svg" width="280" alt="Sedona picture">
+    </div>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">Седона - небольшой городок в  Аризоне, заслуживающий большего!</h1>
+    <h1 class="caption-main">Седона &#8212 небольшой городок в  Аризоне, заслуживающий большего!</h1>
     <span class="page-main__info">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <ul class="advantages__list">
+      <ul class="advantages__list list-none">
         <li class="advantages__item">
           <div class="advantages__info">
             <h3 class="advantages__title">Настоящий городок</h3>
@@ -44,7 +55,7 @@
             <p class="advantages__description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <img class="advantages__img" src="#" width="150" height="150" alt="HTML Academy: Улицы Седоны">
-          <ul class="advantages__list">
+          <ul class="advantages__list list-none">
             <li class="advantages__seconditem">
               <h4 class="advantages__secondtitle">Жилье</h4>
               <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
