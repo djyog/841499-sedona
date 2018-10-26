@@ -52,10 +52,6 @@
   border-top: 1px solid @color-itemlight;
  }
 
-.page-header__logo {
-  position: relative;
-}
-
 .main-menu {
   position: absolute;
   top: 15px;
@@ -70,8 +66,15 @@
 .header-picture {
   min-width: 320px;
   min-height: 390px;
-  margin-top: 22px;
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url(../../img/bg-back-mobile-triangles@1x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.header-picture--photo {
+  min-width: 320px;
+  height: 160px;
+  background-image: url(../../img/bg-back-mobile-triangles@1x.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -108,4 +111,15 @@
   width: 265px;
   height: 125px;
   text-transform: uppercase;
+}
+
+.page-header__logo {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 102px;
+  height: 84px;
+  margin-bottom: 30px;
+  background: url("../../img/logo-sedona-mobile.svg");
 }
