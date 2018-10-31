@@ -2,14 +2,13 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link href="css/normalize-mini.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -19,21 +18,26 @@
             <a href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a>Форма отзыва</a>
+            <a href="#">Форма отзыва</a>
           </li>
           <li class="site-list__item">
             <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
+        <button class="main-menu main-nav__toggle font-none" type="button">Закрыть меню
+        </button>
       </div>
     </nav>
-    <a href="index.html" class="page-header__logo">
-      <img class="page-header__logo-image" src="#" width="100" height="100" alt="HTML Academy: Седона">
+    <a href="index.html">
+      <img src="img/logo-sedona-mobile.svg" width="102" height="84" class="page-header__logo" alt="Sedona Logo">
     </a>
+    <div class="page-header__picture--photo">
+      <img class="page-header__sedona-picture" src="img/text-sedona.svg" width="280" height="40" alt="Sedona picture">
+    </div>
   </header>
-  <main class="page-main">
-    <h1 class="page-main__main-title">Оставьте свой отзыв</h1>
-    <p class="page-main__info">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+  <main class="page-form">
+    <h1 class="page-form__main-title">Оставьте свой отзыв</h1>
+    <p class="page-form__info-form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     <form method="post" action="https://echo.htmlacademy.ru" class="comment-form">
       <fieldset class="comment-form__field-set">
         <legend class="visually-hidden">
@@ -42,34 +46,34 @@
         <div class="comment-form__name">
           <h2 class="comment-form__title">Представьтесь:</h2>
           <div class="comment-form__input-container">
-            <label for="username">
+            <label for="username" class="comment-form__family">
               Имя:
             </label>
             <input type="text" class="comment-form__custom-input" name="username" id="username" placeholder="Петр">
           </div>
           <div class="comment-form__input-container">
-            <label for="usersurname">
+            <label for="usersurname" class="comment-form__family">
               Фамилия:
             </label>
             <input type="text" class="comment-form__custom-input" name="usersurname" id="usersurname" placeholder="Иванов">
           </div>
           <div class="comment-form__input-container">
-            <label for="userpatronymic">
+            <label for="userpatronymic" class="comment-form__family">
               Отчество:
             </label>
-            <input type="email" class="comment-form__custom-input" name="userpatronymic" id="userpatronymic" placeholder="Александрович" required>
+            <input type="text" class="comment-form__custom-input" name="userpatronymic" id="userpatronymic" placeholder="Александрович" required>
           </div>
         </div>
         <div class="comment-form__contact">
           <h2 class="comment-form__title">Контактная информация:</h2>
           <div class="comment-form__input-container">
-            <label for="usertell">
+            <label for="usertell" class="comment-form__tell">
               Контактный телефон:
             </label>
             <input type="text" class="comment-form__custom-input" name="usertell" id="usertell" placeholder="Введите телефон:">
           </div>
           <div class="comment-form__input-container">
-            <label for="usersurname">
+            <label for="usersurname" class="comment-form__e-mail">
               Электронная почта:
             </label>
             <input type="text" class="comment-form__custom-input" name="usermail" id="usermail" placeholder="Введите e-mail:">
@@ -121,7 +125,7 @@
         </div>
         <div class="comment-form__user-emotions">
           <div class="comment-form__input-container">
-            <label for="user-text">
+            <label for="user-text" class="comment-form__label-emotions">
               Опишите свои эмоции:
             </label>
             <textarea name="user-text" class="comment-form__text-area" id="user-text" placeholder="Опишите подробно все свои восторги">
