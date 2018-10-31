@@ -1,3 +1,12 @@
+.caption-main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 265px;
+  .font__18-26--bold;
+  text-align: center;
+}
+
   .page-header {
     display: block;
     width: auto;
@@ -5,17 +14,15 @@
     vertical-align: center;
     padding-left: auto;
     padding-right: auto;
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 400px;
-    font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0;
-    text-transform: uppercase;
-    text-decoration: none;
     cursor: pointer;
     min-width: 320px;
+    .font__18-26--bold;
     text-align: center;
   }
+
+.main-nav{
+  display: block;
+}
 
 .page-header a {
     text-decoration: none;
@@ -66,15 +73,15 @@
 .header-picture {
   min-width: 320px;
   min-height: 390px;
-  background-image: url(../../img/bg-back-mobile-triangles@1x.jpg);
+  background-image: url("../../img/bg-back-mobile-triangles@1x.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.header-picture--photo {
+.page-header__picture--photo {
   min-width: 320px;
   height: 160px;
-  background-image: url(../../img/bg-back-mobile-triangles@1x.jpg);
+  background-image: url("../../img/bg-back-mobile-triangles@1x.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -91,26 +98,10 @@
   bottom: 60px;
   min-width: 320px;
   height: 60px;
-  background-image: url(../../img/bg-intro-triangle-mobile.svg);
+  background-image: url("../../img/bg-intro-triangle-mobile.svg");
   background-size: cover;
   background-position: center;
   margin-bottom: 40px;
-}
-
-.caption-main {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'PT Sans', sans-serif;
-  color: rgb(0, 0, 0);
-  font-weight: 400px;
-  font-size: 18px;
-  text-align: center;
-  line-height: 1.444;
-  letter-spacing: 0;
-  width: 265px;
-  height: 125px;
-  text-transform: uppercase;
 }
 
 .page-header__logo {
@@ -118,8 +109,5 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 102px;
-  height: 84px;
   margin-bottom: 30px;
-  background: url("../../img/logo-sedona-mobile.svg");
 }

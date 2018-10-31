@@ -2,7 +2,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
   }
 
 .container-photo__info {
@@ -24,58 +23,26 @@
 }
 
 .container-photo__image-name {
-  font-weight: bold;
+  display: block;
+  .font__14-24--bold;
 }
 
 .container-photo__author {
   display: block;
-  text-transform: none;
+  .font__14-24;
 }
 
 .container-photo__like {
   display: block;
+  .font__14-24--bold;
 }
 
-.page-main {
-    display: block;
-    width: auto;
-    margin: auto;
-    vertical-align: center;
-    padding-left: auto;
-    padding-right: auto;
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 400px;
-    font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0;
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-    min-width: 320px;
-    text-align: center;
-    list-style: none;
-  }
-
-.caption-main {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'PT Sans', sans-serif;
-  color: rgb(0, 0, 0);
-  font-weight: 400px;
-  font-size: 18px;
-  text-align: center;
-  line-height: 1.444;
-  letter-spacing: 0;
-  width: 265px;
-  height: 125px;
-  text-transform: uppercase;
+.container-photo__like {
+  padding-bottom: 23px;
 }
 
-.page-main__info,
 .advantages__info,
-.advantages__list,
-.search-block__info {
+.advantages__list {
   display: block;
   width: 320px;
   margin-left: auto;
@@ -86,21 +53,8 @@
   background-color: @color-header;
   color: white;
   width: 320px;
-  height: 470px;
   padding-top: 15px;
 }
-
-.advantages__n1 {
-  background-image: url("../../img/main-city-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  }
-
-.advantages__n2 {
-  background-image: url("../../img/main-bridge-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  }
 
 .advantages__img {
   display: block;
@@ -132,15 +86,6 @@
   font-weight: bold;
 }
 
-.search-block__info {
-  width: 280px;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 24px;
-  margin-bottom: 30px;
-}
-
 .search-block__btf-container {
   display: block;
   margin-bottom: 30px;
@@ -149,14 +94,6 @@
   width: 280px;
   height: 58px;
   background-color: @color-header;
-}
-
-.search-block__btn {
-   display: inline-block;
-   margin-top: 10px;
-   font-weight: normal;
-   color: white;
-   text-decoration: none;
 }
 
 .brief-info__link {
@@ -171,9 +108,12 @@
   margin-bottom: 40px;
 }
 
-.page-main__photo-title, .container-photo__info {
-  font-size: 14px;
-  font-weight: bold;
+.page-main__photo-title {
+  .font__18-26--bold;
+}
+
+.container-photo__info {
+  .font__14-24;
 }
 
 .container-photo__photo-wrapper {
@@ -186,14 +126,13 @@
 }
 
 .container-photo__video-title {
-  font-size: 21px;
+  .font__18-26--bold;
 }
 
 .container-photo__video-info {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 280px;
-  font-size: 15px;
-  font-weight: bold;
+  width: 240px;
+  .font__14-24;
 }

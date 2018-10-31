@@ -1,68 +1,49 @@
   .page-main {
     display: block;
-    width: auto;
+    width: 320px;
     margin: auto;
-    vertical-align: center;
-    padding-left: auto;
-    padding-right: auto;
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 400px;
-    font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0;
-    text-transform: uppercase;
-    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    .font__14-21;
     cursor: pointer;
-    min-width: 320px;
     text-align: center;
     list-style: none;
   }
 
-.caption-main {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'PT Sans', sans-serif;
-  color: rgb(0, 0, 0);
-  font-weight: 400px;
-  font-size: 18px;
-  text-align: center;
-  line-height: 1.444;
-  letter-spacing: 0;
-  width: 265px;
-  height: 125px;
-  text-transform: uppercase;
-}
-
 .page-main__info,
 .advantages__info,
-.advantages__list,
-.search-block__info {
+.advantages__list {
   display: block;
-  width: 320px;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
 }
+
+.page-main__info {
+ .font__14-26;
+ width: 260px;
+}
+
+.advantages__title {
+  .font__18-26--bold;
+  width: 320px;
+  text-align: center;
+}
+
+.advantages__title--white {
+  .font__18-26--bold;
+  color: white;
+  width: 320px;
+  text-align: center;
+}
+
 
 .advantages__info {
   background-color: @color-header;
   color: white;
   width: 320px;
-  height: 470px;
   padding-top: 15px;
 }
-
-.advantages__n1 {
-  background-image: url("../../img/main-city-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  }
-
-.advantages__n2 {
-  background-image: url("../../img/main-bridge-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  }
 
 .advantages__img {
   display: block;
@@ -83,23 +64,63 @@
 .advantages__description {
   padding: 0;
   margin: 0;
+  .font__14-21;
+}
+
+.advantages__description--white {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  .font__14-21;
+  color: white;
+  width: 275px;
+  text-align: center;
+  padding-bottom: 42px;
+}
+
+.advantages__description--left {
+  padding: 0;
+  padding-left: 69px;
+  margin: 0;
+  .font__14-21;
+  text-align: left;
+}
+
+.advantages__description--left-mini {
+  padding: 0;
+  padding-left: 69px;
+  padding-right: 70px;
+  padding-bottom: 42px;
+  margin: 0;
+  .font__14-21;
+  text-align: left;
 }
 
 .advantages__number {
   display: block;
   margin-top: -21px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.advantages__secondtitle {
+   .font__18-26--bold;
+   text-align: left;
+   padding-left: 69px;
 }
 
 .search-block__title {
-  font-weight: bold;
+  .font__21-26--bold;
 }
 
 .search-block__info {
-  width: 280px;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 24px;
+  display: block;
+  width: 265px;
+  margin-left: auto;
+  margin-right: auto;
+  .font__14-24;
   margin-bottom: 30px;
 }
 
@@ -114,11 +135,12 @@
 }
 
 .search-block__btn {
-   display: inline-block;
-   margin-top: 10px;
-   font-weight: normal;
-   color: white;
-   text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  .font__21-26--bold;
+  color: white;
+  text-align: center;
+  padding-top: 6px;
 }
 
 .brief-info__link {
