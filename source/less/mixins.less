@@ -26,13 +26,13 @@
   font-size: 14px;
   line-height: 24px;
   .normal;
-  }
+}
 
 .font__14-21 () {
   font-size: 14px;
   line-height: 21px;
   .normal;
-  }
+}
 
 .font__21-26--bold () {
   font-size: 21px;
@@ -56,7 +56,7 @@
   font-size: 14px;
   line-height: 24px;
   .bold;
-  }
+}
 
 .font__14-26--bold () {
   font-size: 14px;
@@ -96,4 +96,12 @@
 .list-none {
   list-style: none;
   padding: 0;
+}
+
+.no-outline() {
+  outline: none;
+  background: transparent;
+  &::before {
+    display: none;
+  }
 }
