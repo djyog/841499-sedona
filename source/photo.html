@@ -7,80 +7,83 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="page-header">
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+  <header class="main-header">
+    <nav class="main-header__nav main-header__nav--opened">
+      <button class="main-header__nav--toggle font-none" type="button">Закрыть меню</button>
+      <div class="main-header__nav-wrapper">
+        <ul class="main-header__nav-list">
+          <li class="main-header__nav-item main-header__nav-item--active">
             <a href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Фото и видео</a>
+          <li class="main-header__nav-item">
+            <a>Фото и видео</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-header__nav-item">
             <a href="form.html">Форма отзыва</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-header__nav-item">
             <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
-        <button class="main-menu main-nav__toggle font-none" type="button">Закрыть меню
-        </button>
+
       </div>
     </nav>
-    <a href="index.html">
-      <img src="img/logo-sedona-mobile.svg" width="102" height="84" class="page-header__logo" alt="Sedona Logo">
-    </a>
-    <div class="header-picture--photo">
-      <img class="page-header__sedona-picture" src="img/text-sedona.svg" width="280" height="40" alt="Sedona picture">
+    <div class="main-header__logo">
+      <picture>
+        <source media="(max-width: 768px)" srcset="img/logo-sedona-mobile.svg">
+        <source media="(max-width: 1200px)" srcset="img/logo-sedona-tablet.svg">
+        <img src="img/logo-sedona-desktop.svg" alt="Sedona" width="102" height="82">
+      </picture>
+    </div>
+    <div class="main-header__picture-mini">
+      <img class="main-header__text-sedona" src="img/text-sedona.svg" width="280" alt="Sedona picture">
     </div>
   </header>
-  <main class="page-main">
-    <article class="container-photo">
-      <h1 class="page-main__photo-title">Фото и видео</h1>
-      <p class="container-photo__info">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      <div class="container-photo__photo-wrapper">
-        <div class="container-photo__text">
-          <img class="container-photo__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Народные просторы">
-          <p class="container-photo__image-name">Народные просторы</p>
-          <span class="container-photo__author">Автор фото: Борис</span>
-          <span class="container-photo__like">1330</span>
+  <main class="content">
+    <article class="main-photo">
+      <h1 class="main-photo__title">Фото и видео</h1>
+      <p class="main-photo__info">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <div class="main-photo__photo-wrapper">
+        <div class="main-photo__text">
+          <img class="main-photo__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Народные просторы">
+          <p class="main-photo__image-name">Народные просторы</p>
+          <span class="main-photo__author">Автор фото: Борис</span>
+          <span class="main-photo__like">1330</span>
         </div>
 
-        <div class="container-photo__text">
-          <img class="container-photo__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Народные просторы">
-          <p class="container-photo__image-name">Местная растительность</p>
-          <span class="container-photo__author">Автор фото: Сергей</span>
-          <span class="container-photo__like">143</span>
+        <div class="main-photo__text">
+          <img class="main-photo__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Народные просторы">
+          <p class="main-photo__image-name">Местная растительность</p>
+          <span class="main-photo__author">Автор фото: Сергей</span>
+          <span class="main-photo__like">143</span>
         </div>
-        <div class="container-photo__text">
-          <img class="container-photo__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Народные просторы">
-          <p class="container-photo__image-name">Дорога на север</p>
-          <span class="container-photo__author">Автор фото: Петр</span>
-          <span class="container-photo__like">96</span>
+        <div class="main-photo__text">
+          <img class="main-photo__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Народные просторы">
+          <p class="main-photo__image-name">Дорога на север</p>
+          <span class="main-photo__author">Автор фото: Петр</span>
+          <span class="main-photo__like">96</span>
         </div>
-        <div class="container-photo__text">
-          <img class="container-photo__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Народные просторы">
-          <p class="container-photo__image-name">Мост Дьявола</p>
-          <span class="container-photo__author">Автор фото: Антон</span>
-          <span class="container-photo__like">254</span>
+        <div class="main-photo__text">
+          <img class="main-photo__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Народные просторы">
+          <p class="main-photo__image-name">Мост Дьявола</p>
+          <span class="main-photo__author">Автор фото: Антон</span>
+          <span class="main-photo__like">254</span>
         </div>
       </div>
-      <div class="container-photo__video-wrapper">
-        <h2 class="container-photo__video-title">Вы еще сомневаетесь?</h2>
-        <p class="container-photo__video-info">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <div class="main-photo__video-wrapper">
+        <h2 class="main-photo__video-title">Вы еще сомневаетесь?</h2>
+        <p class="main-photo__video-info">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div>
           <!-- здесь будет видео-ролик -->
         </div>
       </div>
     </article>
   </main>
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <section class="social">
-        <h2 class="social__title visually-hidden">Мы в соцсетях</h2>
-        <div class="page-footer__social social">
-          <b class="social__title">#visitsedona</b>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <b class="main-footer__title">#visitsedona</b>
+        <div class="main-footer__social social">
+
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
@@ -93,8 +96,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <div class="page-footer__copyright copyright">
+
+      <div class="main-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
