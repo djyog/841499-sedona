@@ -9,7 +9,7 @@
 <body>
   <header class="main-header">
     <nav class="main-header__nav main-header__nav--opened">
-      <button class="main-header__nav--toggle font-none" type="button">Закрыть меню</button>
+      <button class="main-header__button main-header__button--toggle font-none" type="button">Закрыть меню</button>
       <div class="main-header__nav-wrapper">
         <ul class="main-header__nav-list">
           <li class="main-header__nav-item main-header__nav-item--active">
@@ -36,17 +36,19 @@
       </picture>
     </div>
     <div class="main-header__picture-mini">
-      <img class="main-header__text-sedona" src="img/text-sedona.svg" width="280" alt="Sedona picture">
+      <img class="main-header__text-sedona" src="img/text-sedona.svg" width="460" alt="Sedona picture">
     </div>
   </header>
-  <main class="page-form">
-    <h1 class="page-form__main-title">Оставьте свой отзыв</h1>
-    <p class="page-form__info-form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+  <main class="main-form">
+    <div class="main-form__info">
+      <h1 class="main-form__main-title">Оставьте свой отзыв</h1>
+      <p class="main-form__info-form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </div>
     <form method="post" action="https://echo.htmlacademy.ru" class="comment-form">
-      <fieldset class="comment-form__field-set">
-        <legend class="visually-hidden">
+      <div class="comment-form__field-set">
+        <span class="visually-hidden">
           Форма обратной связи
-        </legend>
+        </span>
         <div class="comment-form__name">
           <h2 class="comment-form__title">Представьтесь:</h2>
           <div class="comment-form__input-container">
@@ -74,21 +76,21 @@
             <label for="usertell" class="comment-form__tell">
               Контактный телефон:
             </label>
-            <input type="text" class="comment-form__custom-input" name="usertell" id="usertell" placeholder="Введите телефон:">
+            <input type="text" class="comment-form__contact-input" name="usertell" id="usertell" placeholder="Введите телефон:">
           </div>
           <div class="comment-form__input-container">
             <label for="usersurname" class="comment-form__e-mail">
               Электронная почта:
             </label>
-            <input type="text" class="comment-form__custom-input" name="usermail" id="usermail" placeholder="Введите e-mail:">
+            <input type="text" class="comment-form__contact-input" name="usermail" id="usermail" placeholder="Введите e-mail:">
           </div>
         </div>
         <div class="comment-form__impression">
           <h2 class="visually-hidden">Ваше общее впечатление:</h2>
-          <fieldset class="comment-form__field comment-form__field--bottom">
-            <legend class="comment-form__title">
+          <div class="comment-form__field comment-form__field--bottom">
+            <span class="comment-form__title">
               Ваше общее впечатление:
-            </legend>
+            </span>
             <input type="radio" name="morepositive" value="2" id="morepositive" class="comment-form__input visually-hidden" checked>
             <label for="morepositive" class="comment-form__label comment-form__label--radio">
               Скорее положительное
@@ -101,31 +103,41 @@
             <label for="difficultreply" class="comment-form__label comment-form__label--radio">
               Затрудняюсь ответить
             </label>
-          </fieldset>
+          </div>
         </div>
         <div class="comment-form__sights">
-          <h2 class="visually-hidden">Посещенные достопримечательности:</h2>
-          <fieldset class="comment-form__field comment-form__field--middle">
-            <legend class="comment-form__legend">
+          <h2 class="visually-hidden">Посещенные достопримечательности</h2>
+          <div class="comment-form__field comment-form__field--middle">
+            <span class="comment-form__legend">
               Посещенные достопримечательности:
-            </legend>
-            <input type="checkbox" name="sight" value="bridge" id="cb-bridge" class="comment-form__input visually-hidden" checked>
-            <label for="cb-bridge" class="comment-form__label comment-form__label--checkbox">
-              Мост Дьявола
-            </label>
-            <input type="checkbox" name="sight" value="white" id="cb-mount" class="comment-form__input visually-hidden">
-            <label for="cb-mount" class="comment-form__label comment-form__label--checkbox">
-              Гора-Колокол
-            </label>
-            <input type="checkbox" name="sight" value="park" id="cb-park" class="comment-form__input visually-hidden">
-            <label for="cb-park" class="comment-form__label comment-form__label--checkbox">
-              Слайд-парк
-            </label>
-            <input type="checkbox" name="sight" value="red" id="cb-rocks" class="comment-form__input visually-hidden">
-            <label for="cb-rocks" class="comment-form__label comment-form__label--checkbox">
-              Красные скалы
-            </label>
-          </fieldset>
+            </span>
+            <ul class="comment-form__sights-list">
+              <li class="comment-form__sights-item">
+                <input type="checkbox" name="sight" value="bridge" id="cb-bridge" class="comment-form__input visually-hidden" checked>
+                <label for="cb-bridge" class="comment-form__label comment-form__label--checkbox">
+                Мост Дьявола
+                </label>
+              </li>
+              <li class="comment-form__sights-item">
+                <input type="checkbox" name="sight" value="white" id="cb-mount" class="comment-form__input visually-hidden">
+                <label for="cb-mount" class="comment-form__label comment-form__label--checkbox">
+                Гора-Колокол
+              </label>
+              </li>
+              <li class="comment-form__sights-item">
+                <input type="checkbox" name="sight" value="park" id="cb-park" class="comment-form__input visually-hidden">
+                <label for="cb-park" class="comment-form__label comment-form__label--checkbox">
+                Слайд-парк
+                </label>
+              </li>
+              <li class="comment-form__sights-item">
+                <input type="checkbox" name="sight" value="red" id="cb-rocks" class="comment-form__input visually-hidden">
+                <label for="cb-rocks" class="comment-form__label comment-form__label--checkbox">
+                Красные скалы
+                </label>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="comment-form__user-emotions">
           <div class="comment-form__input-container">
@@ -141,7 +153,7 @@
             </button>
           </div>
         </div>
-      </fieldset>
+      </div>
     </form>
   </main>
   <footer class="main-footer">
@@ -151,18 +163,18 @@
 
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
+              <a class="social__link social__link--vkontakte" href="https://twitter.com/htmlacademy_ru">Твиттер</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+              <a class="social__link social__link--instagram" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
             </li>
           </ul>
         </div>
 
-      <div class="main-footer__copyright copyright">
+      <div class="main-footer__copyright">
         <b class="copyright__text">Разработано</b>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>

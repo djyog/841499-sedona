@@ -1,4 +1,4 @@
-.page-form {
+.main-form {
   display: block;
   width: 320px;
   margin: auto;
@@ -10,28 +10,11 @@
   list-style: none;
 }
 
-.comment-form__field-set {
-  border: 0;
-  width: 280px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.page-form__main-title {
+.main-form__main-title {
   .font__18-26--bold;
 }
 
-.comment-form__title {
-  .font__18-26--bold;
-}
-
-.comment-form__family {
-  .font__14-26--bold;
-  color: @color-family;
-  padding-right: 15px;
-}
-
-.page-form__info-form {
+.main-form__info-form {
   display: block;
   width: 280px;
   margin-left: auto;
@@ -39,83 +22,46 @@
   .font__14-24;
 }
 
-.comment-form__input-container {
-  text-align: left;
-  .font__18-26--bold;
-}
-
-.comment-form__custom-input {
-  border: 0;
-  background-color: @input-color;
-  height: 58px;
-  padding-left: 22px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  font-weight: bold;
-  width: auto;
-}
-
-input[type="text"]::-webkit-input-placeholder {
-  .font__18-26--bold;
-  color: #000000;
-  text-transform: unset;
-}
-
-input[type="text"]:-moz-placeholder {
-  .font__18-26--bold;
-  color: #000000;
-  text-transform: unset;
-}
-
-.comment-form__field {
-  border: 0;
-  text-align: left;
-}
-
-.comment-form__label {
-  display: block;
-  text-transform: none;
-  font-weight: bold;
-}
-
-.comment-form__legend {
-  .font__18-26--bold;
-}
-
-.comment-form__label-emotions {
-  .font__18-26--bold;
-  padding-left: 10px;
-}
-
-
-.comment-form__text-area {
-  display: block;
-  border: 0;
-  background-color: #f2f2f2;
+@media (min-width: @tablet-width) {
+.main-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 768px;
+  min-height: 1680px;
+  margin: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
-  font-size: 14px;
-  font-weight: bold;
-  width: 280px;
-  height: 160px;
+  .font__14-21;
+  cursor: pointer;
+  text-align: center;
+  list-style: none;
 }
 
-.comment-form__btn {
-  border: 0;
-  width: 280px;
-  height: 60px;
-  background-color: @color-header;
-  color: white;
-  font-weight: bold;
-  font-size: 21px;
-  text-transform: uppercase;
-}
-
-.comment-form__tell,
-.comment-form__e-mail {
+.main-form__info {
   display: block;
-  .font__14-26;
-  padding-left: 23px;
+  width: 768px;
+  padding-top: 71px;
+  padding-bottom: 84px;
 }
 
+.main-form__info-form {
+  display: block;
+  width: 445px;
+  margin-left: auto;
+  margin-right: auto;
+  .font__14-24;
+}
+
+.main-form__main-title {
+  padding-bottom: 20px;
+}
+
+.main-form__main-title {
+  .font__30-26--bold
+}
+
+}
+
+@media (min-width: @desktop-width) {
+
+}
