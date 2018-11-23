@@ -13,6 +13,7 @@
   text-align: left;
 }
 
+
 .main-photo__image-name {
   display: block;
   .font__14-24--bold;
@@ -61,4 +62,172 @@
   margin-right: auto;
   width: 240px;
   .font__14-24;
+}
+
+
+@media (min-width: @tablet-width) {
+
+.main-photo {
+  width: 648px;
+}
+
+.main-photo__title {
+  padding-top: 75px;
+  width: 648px;
+}
+
+.main-photo__info {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 432px;
+  text-align: center;
+  .font__14-24;
+  padding-bottom: 75px;
+}
+
+.main-photo__text {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  width: 648px;
+  text-align: left;
+}
+
+.main-photo__text--tablet {
+ display: block;
+ width: 324px;
+ margin-left: 0;
+}
+
+.main-photo__photo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.main-photo__video-title {
+  .font__30-26--bold
+}
+
+.main-photo__video-info {
+  width: 415px;
+}
+
+.main-photo__image-name {
+    display: block;
+}
+
+.main-photo__like {
+  display: block;
+  position: absolute;
+  left: 596px;
+top: 425px;
+}
+
+.main-photo__like--mini {
+
+left: 271px;
+top: 295px;
+}
+
+.main-photo__text {
+  background-color: #f2f2f2
+}
+
+.main-photo__video-wrapper {
+  padding-top: 60px;
+  padding-bottom: 66px;
+  width: 768px;
+}
+
+}
+
+
+@media (min-width: @desktop-width) {
+
+.main-photo {
+  width: 1200px;
+}
+
+.main-photo__text {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  width: 1200px;
+  text-align: left;
+}
+
+.main-photo__text--tablet {
+ display: block;
+ width: 400px;
+ margin-left: 0;
+}
+
+.main-photo__photo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.main-photo__text {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-photo__desktop-info {
+  display: block;
+  height: 80px;
+  position: relative;
+  margin-top: -100px;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-photo__image-name,
+.main-photo__author,
+.main-photo__like,
+ {
+  color: white;
+}
+
+.main-photo__image-name {
+  padding-top: 10px;
+}
+
+.main-photo__image-name,
+.main-photo__author {
+  padding-left: 21px;
+}
+
+.main-photo__like {
+  display: block;
+  position: absolute;
+  left: 1147px;
+  top: 15px;
+}
+
+.main-photo__like--mini {
+left: 347px;
+top: 15px;
+}
+
+.main-photo__title {
+  padding-top: 75px;
+  width: 1200px;
+  .font__30-26--bold
+}
+
+.main-photo__info {
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 77px;
+}
+
+.main-photo__video-wrapper {
+  padding-top: 60px;
+  padding-bottom: 66px;
+  width: 1200px;
+}
+
 }
